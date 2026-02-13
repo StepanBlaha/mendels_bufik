@@ -1,0 +1,166 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--cream);
+  border-bottom: 2.5px solid var(--ink);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logoImg {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid var(--ink);
+}
+
+.logoText {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.logoTextAccent {
+  color: var(--pink);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  border: 2.5px solid var(--ink);
+  border-radius: 12px;
+  padding: 0.2rem;
+  background: white;
+}
+
+.navLink {
+  padding: 0.45rem 1.1rem;
+  border-radius: 9px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.navLink:hover {
+  background: var(--pink-bg);
+  color: var(--pink);
+}
+
+.navLinkActive {
+  background: var(--pink);
+  color: white;
+}
+
+.navLinkActive:hover {
+  background: var(--pink);
+  color: white;
+}
+
+.igBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: white;
+  background: var(--ink);
+  border: 2.5px solid var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-decoration: none;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.igBtn:hover {
+  background: var(--pink);
+  border-color: var(--pink);
+  transform: translateY(-1px);
+}
+
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+  padding: 0.5rem;
+}
+
+.mobileOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--cream);
+  z-index: 200;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.mobileOverlayOpen {
+  display: flex;
+}
+
+.mobileCloseBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+  padding: 0.5rem;
+}
+
+.mobileLink {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.8rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileLink:hover {
+  color: var(--pink);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1.25rem;
+  }
+  .navLinks,
+  .igBtn {
+    display: none;
+  }
+  .mobileMenuBtn {
+    display: block;
+  }
+}
