@@ -4,31 +4,33 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
-        <div className={styles.footerGrid}>
-          <div className={styles.brandCol}>
+        <div className={styles.footerPanel}>
+          <div className={styles.footerGrid}>
+            <div className={styles.brandCol}>
             <div className={styles.logoRow}>
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MuTXFGfkLWVdffjEePBSUAx31f49hB.png"
-                alt="Mendel's Bufik logo"
+                alt="Logo Mendel&uring;v Buf&iacute;k"
                 className={styles.logoImg}
               />
               <span className={styles.logoText}>
-                Mendel&apos;s{" "}
-                <span className={styles.logoTextAccent}>Buf&iacute;k</span>
+                Mendel&uring;v <span className={styles.logoTextAccent}>Buf&iacute;k</span>
               </span>
             </div>
             <p className={styles.brandDesc}>
-              Mendelova Stredni Skola&apos;s coziest spot for fresh pastries,
-              warm snacks, and your favorite drinks between classes.
+              Nej&uacute;tuln&#283;j&#353;&iacute; m&iacute;sto Mendelovy
+              st&#345;edn&iacute; &#353;koly pro &#269;erstv&eacute; pe&#269;ivo,
+              tepl&eacute; sva&#269;iny a obl&iacute;ben&eacute; n&aacute;poje
+              mezi hodinami.
             </p>
           </div>
 
-          <div>
-            <h3 className={styles.colTitle}>Navigate</h3>
+            <div>
+              <h3 className={styles.colTitle}>Navigace</h3>
             <ul className={styles.colLinks}>
               <li>
                 <a href="#home" className={styles.colLink}>
-                  Home
+                  Dom&#367;
                 </a>
               </li>
               <li>
@@ -38,36 +40,40 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#hours" className={styles.colLink}>
-                  Opening Hours
+                  Otev&#237;rac&#237; doba
                 </a>
               </li>
               <li>
                 <a href="#gallery" className={styles.colLink}>
-                  Gallery
+                  Galerie
                 </a>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className={styles.colTitle}>About</h3>
+            <div>
+              <h3 className={styles.colTitle}>O n&aacute;s</h3>
             <ul className={styles.colLinks}>
               <li>
                 <a href="#team" className={styles.colLink}>
-                  Our Team
+                  N&aacute;&#353; t&yacute;m
                 </a>
               </li>
               <li>
-                <span className={styles.colLink}>Fresh Daily</span>
+                <span className={styles.colLink}>
+                  Denn&#283; &#269;erstv&eacute;
+                </span>
               </li>
               <li>
-                <span className={styles.colLink}>Made with Love</span>
+                <span className={styles.colLink}>
+                  D&#283;lan&eacute; s l&aacute;skou
+                </span>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className={styles.colTitle}>Follow</h3>
+            <div>
+              <h3 className={styles.colTitle}>Sledujte n&aacute;s</h3>
             <ul className={styles.colLinks}>
               <li>
                 <a
@@ -81,22 +87,26 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#socials" className={styles.colLink}>
-                  Stay Connected
+                  Bu&#271;te v kontaktu
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <p className={styles.bigTagline}>{"Your Favorite School Spot"}</p>
-
-        <div className={styles.bottom}>
-          <p className={styles.copyright}>
-            &copy; 2026 Mendel&apos;s Buf&iacute;k &mdash; Mendelova Stredni Skola
+          <p className={styles.bigTagline}>
+            Va&#353;e obl&iacute;ben&eacute; m&iacute;sto ve &#353;kole
           </p>
-          <a href="#home" className={styles.backToTop}>
-            Back to Top
-          </a>
+
+          <div className={styles.bottom}>
+            <p className={styles.copyright}>
+              &copy; 2026 Mendel&#367;v Buf&iacute;k &mdash; Mendelova
+              st&#345;edn&iacute; &#353;kola
+            </p>
+            <a href="#home" className={styles.backToTop}>
+              Zp&#283;t nahoru
+            </a>
+          </div>
         </div>
       </div>
     </footer>

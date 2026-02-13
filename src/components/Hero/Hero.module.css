@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   padding: 5rem 2.5rem 6rem;
-  background: var(--cream);
+  background: linear-gradient(130deg, var(--cream) 0%, var(--pink-bg) 55%, #fff 100%);
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--yellow-light);
+  background: var(--pink-light);
   border: 2.5px solid var(--ink);
   border-radius: 8px;
   padding: 0.35rem 0.85rem;
@@ -56,19 +56,10 @@
   color: var(--pink);
   position: relative;
   display: inline-block;
-}
-
-.headingAccent::after {
-  content: "";
-  position: absolute;
-  left: -2px;
-  right: -2px;
-  bottom: 2px;
-  height: 10px;
-  background: var(--pink-light);
-  z-index: -1;
-  border-radius: 2px;
-  transform: rotate(-0.5deg);
+  font-family: "Segoe Script", "Brush Script MT", "Comic Sans MS", cursive;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .subtitle {
@@ -123,7 +114,7 @@
   font-size: 0.88rem;
   font-weight: 800;
   color: var(--ink);
-  background: white;
+  background: var(--pink-bg);
   border: 2.5px solid var(--ink);
   cursor: pointer;
   transition: all 0.15s ease;
@@ -135,7 +126,7 @@
 .btnSecondary:hover {
   transform: translate(-1px, -1px);
   box-shadow: 4px 4px 0 var(--ink);
-  background: var(--yellow-light);
+  background: white;
 }
 
 .btnSecondary:active {
@@ -150,52 +141,85 @@
   justify-content: center;
 }
 
-.imageGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
   width: 100%;
   max-width: 440px;
 }
 
-.imgCard {
+.iconCard {
+  background: var(--pink-light);
+  border: 2.5px solid var(--ink);
+  border-radius: 18px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.iconImg {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+  background: white;
+  border: 2.5px solid var(--ink);
+  border-radius: 26px;
+  padding: 1.2rem;
+}
+
+.iconLabel {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: white;
+  border: 2px solid var(--ink);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.photoRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.miniCard {
   border-radius: 14px;
   overflow: hidden;
   border: 2.5px solid var(--ink);
   transition: transform 0.2s ease;
   background: white;
+  box-shadow: 2px 2px 0 var(--ink);
 }
 
-.imgCard:hover {
-  transform: rotate(-1deg) scale(1.02);
-}
-
-.imgCardTall {
-  grid-row: span 2;
+.miniCard:hover {
+  transform: translate(-1px, -1px);
 }
 
 .heroImg {
   width: 100%;
-  height: 100%;
+  height: 140px;
   object-fit: cover;
   display: block;
-}
-
-.imgCardShort .heroImg {
-  height: 165px;
 }
 
 .floatingTag {
   position: absolute;
   bottom: -0.75rem;
   right: -0.5rem;
-  background: var(--yellow);
+  background: var(--pink);
   border: 2.5px solid var(--ink);
   border-radius: 8px;
   padding: 0.55rem 1rem;
   font-size: 0.78rem;
   font-weight: 800;
-  color: var(--ink);
+  color: white;
   z-index: 3;
   white-space: nowrap;
   transform: rotate(2deg);
@@ -209,10 +233,10 @@
   right: 3rem;
   width: 80px;
   height: 80px;
-  border: 3px dashed var(--pink-light);
+  border: 3px dashed var(--pink);
   border-radius: 50%;
   z-index: 0;
-  opacity: 0.6;
+  opacity: 0.35;
 }
 
 .doodleTwo {
@@ -221,12 +245,12 @@
   left: 2rem;
   width: 48px;
   height: 48px;
-  background: var(--blue-light);
+  background: var(--pink-bg);
   border: 2.5px solid var(--ink);
   border-radius: 8px;
   z-index: 0;
   transform: rotate(12deg);
-  opacity: 0.35;
+  opacity: 0.5;
 }
 
 .doodleThree {
@@ -235,11 +259,11 @@
   right: 10%;
   width: 20px;
   height: 20px;
-  background: var(--yellow);
+  background: var(--pink-light);
   border: 2px solid var(--ink);
   border-radius: 50%;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 @media (max-width: 768px) {
@@ -254,11 +278,18 @@
   .heading {
     font-size: 2.2rem;
   }
-  .imageGrid {
+  .showcase {
     max-width: 100%;
   }
-  .imgCardShort .heroImg {
-    height: 130px;
+  .iconCard {
+    padding: 1.6rem;
+  }
+  .iconImg {
+    width: 140px;
+    height: 140px;
+  }
+  .heroImg {
+    height: 120px;
   }
   .floatingTag {
     bottom: -0.5rem;

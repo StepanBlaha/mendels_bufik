@@ -1,26 +1,26 @@
-import styles from "./About.module.css";
+﻿import styles from "./About.module.css";
 
 const team = [
   {
     name: "Terka",
-    role: "Head Baker",
-    bio: "Wakes up at dawn to make sure every croissant is golden and every cupcake is frosted to perfection.",
+    role: "Hlavní pekařka",
+    bio: "Vstává za tmy, aby byly croissanty zlatavé a cupcaky dokonale ozdobené.",
     image: "/images/team-1.jpg",
-    alt: "Terka, head baker",
+    alt: "Terka, hlavní pekařka",
   },
   {
     name: "Honza",
-    role: "Sandwich Artist",
-    bio: "Assembles the freshest baguettes and wraps. If you see a smile behind the counter, it is probably his.",
+    role: "Mistr sendvičů",
+    bio: "Chystá nejčerstvější bagety a wrapy. Pokud uvidíte úsměv za pultem, je to nejspíš on.",
     image: "/images/team-2.jpg",
-    alt: "Honza, sandwich artist",
+    alt: "Honza, mistr sendvičů",
   },
   {
     name: "Lucka",
-    role: "Coffee & Drinks",
-    bio: "Brews the perfect latte every time and always knows your usual order by heart.",
+    role: "Káva a nápoje",
+    bio: "Umí perfektní latte a vždy si pamatuje, co si dáváte nejčastěji.",
     image: "/images/team-3.jpg",
-    alt: "Lucka, barista",
+    alt: "Lucka, baristka",
   },
 ];
 
@@ -29,11 +29,11 @@ export default function Team() {
     <section className={styles.section} id="team">
       <div className={styles.inner}>
         <div className={styles.header}>
-          <span className={styles.sectionLabel}>Our Team</span>
-          <h2 className={styles.title}>The Faces Behind the Counter</h2>
+          <span className={styles.sectionLabel}>Náš tým</span>
+          <h2 className={styles.title}>Tváře za pultem</h2>
           <p className={styles.subtitle}>
-            A small but mighty crew that keeps Mendel&apos;s Buf&iacute;k
-            running with warmth, care, and a lot of love for good food.
+            Malý, ale sehraný tým, který drží Mendelův Bufík v chodu s úsměvem,
+            péčí a láskou k dobrému jídlu.
           </p>
         </div>
 

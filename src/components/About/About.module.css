@@ -1,6 +1,6 @@
 .section {
   padding: 5.5rem 2.5rem;
-  background: white;
+  background: var(--pink-bg);
   border-top: 2.5px solid var(--ink);
 }
 

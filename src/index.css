@@ -103,16 +103,16 @@ button:focus-visible {
     --ring: 340 65% 55%;
     --radius: 0.75rem;
 
-    --pink: #d94f7a;
-    --pink-light: #f2d0dc;
-    --pink-bg: #fdf0f4;
-    --cream: #faf6f1;
+    --pink: #e6477b;
+    --pink-light: #ffd4e4;
+    --pink-bg: #fff1f6;
+    --cream: #fff6fa;
     --ink: #2b2f3a;
     --ink-light: #5a5f72;
     --blue: #4a6fa5;
     --blue-light: #dce6f2;
-    --yellow: #f5d76e;
-    --yellow-light: #fdf5d6;
+    --yellow: #f7c96b;
+    --yellow-light: #fff1cc;
     --green: #6bab6e;
     --green-light: #dff0df;
   }

@@ -1,53 +1,53 @@
-import styles from "./Menu.module.css";
+﻿import styles from "./Menu.module.css";
 
 const menuItems = [
   {
-    category: "Pastry",
-    title: "Fresh Croissants",
-    desc: "Buttery, flaky, baked fresh every morning. The perfect start to your school day.",
-    price: "From 25 Kc",
+    category: "Pečivo",
+    title: "Čerstvé croissanty",
+    desc: "Máslové, křehké a pečené každé ráno. Perfektní start do školního dne.",
+    price: "Od 25 Kč",
     image: "/images/hero-croissant.jpg",
-    alt: "Golden fresh croissant",
+    alt: "Zlatavý čerstvý croissant",
   },
   {
-    category: "Snack",
-    title: "Gourmet Sandwiches",
-    desc: "Artisan bread stuffed with quality meats, cheeses, and fresh veggies.",
-    price: "From 45 Kc",
+    category: "Svačina",
+    title: "Gurmánské sendviče",
+    desc: "Řemeslné pečivo plněné kvalitní šunkou, sýrem a čerstvou zeleninou.",
+    price: "Od 45 Kč",
     image: "/images/sandwich.jpg",
-    alt: "Fresh gourmet sandwich",
+    alt: "Čerstvý gurmánský sendvič",
   },
   {
-    category: "Sweet",
-    title: "Cupcakes & Treats",
-    desc: "Our signature pink cupcakes and sweet treats to brighten your break.",
-    price: "From 30 Kc",
+    category: "Sladké",
+    title: "Cupcaky a dobroty",
+    desc: "Naše růžové cupcaky a sladké dobroty, které zlepší každou přestávku.",
+    price: "Od 30 Kč",
     image: "/images/cupcakes.jpg",
-    alt: "Pink frosted cupcakes",
+    alt: "Růžové cupcaky",
   },
   {
-    category: "Drink",
-    title: "Coffee & Latte",
-    desc: "Hot or iced, our coffee is the energy boost you need between classes.",
-    price: "From 35 Kc",
+    category: "Nápoj",
+    title: "Káva a latte",
+    desc: "Horká i ledová, vždy voňavá a přesně tak silná, jak potřebujete.",
+    price: "Od 35 Kč",
     image: "/images/hero-coffee.jpg",
-    alt: "Latte with heart art",
+    alt: "Latte se srdíčkem",
   },
   {
-    category: "Bakery",
-    title: "Czech Pastries",
-    desc: "Traditional kolace, sweet rolls, and danishes. A taste of home at school.",
-    price: "From 20 Kc",
+    category: "Pekárna",
+    title: "České koláče",
+    desc: "Tradiční koláče, záviny a sladké pečivo. Chuť domova ve škole.",
+    price: "Od 20 Kč",
     image: "/images/pastries-pink.jpg",
-    alt: "Assorted Czech pastries",
+    alt: "Výběr českého pečiva",
   },
   {
-    category: "Cold",
-    title: "Iced Drinks",
-    desc: "Refreshing iced coffees, teas, and seasonal fruit smoothies.",
-    price: "From 40 Kc",
+    category: "Studené",
+    title: "Ledové nápoje",
+    desc: "Osvěžující ledové kávy, čaje a sezónní ovocné smoothie.",
+    price: "Od 40 Kč",
     image: "/images/iced-coffee.jpg",
-    alt: "Iced coffee drink",
+    alt: "Ledová káva",
   },
 ];
 
@@ -56,32 +56,67 @@ export default function MenuHighlights() {
     <section className={styles.section} id="menu">
       <div className={styles.inner}>
         <div className={styles.header}>
-          <span className={styles.sectionTag}>Our Menu</span>
-          <h2 className={styles.title}>What We Serve</h2>
+          <span className={styles.sectionTag}>Menu</span>
+          <h2 className={styles.title}>Růžové tipy z pultu</h2>
           <p className={styles.subtitle}>
-            Everything is prepared fresh daily. Here are some of our most-loved
-            picks from the counter.
+            Rychlé svačiny a sladké dobroty pro krátké přestávky. Vždy čerstvé,
+            vždy připravené.
           </p>
         </div>
 
-        <div className={styles.grid}>
-          {menuItems.map((item) => (
-            <div key={item.title} className={styles.card}>
-              <img
-                src={item.image}
-                alt={item.alt}
-                width={400}
-                height={200}
-                className={styles.cardImage}
-              />
-              <div className={styles.cardContent}>
-                <span className={styles.cardCategory}>{item.category}</span>
-                <h3 className={styles.cardTitle}>{item.title}</h3>
-                <p className={styles.cardDesc}>{item.desc}</p>
-                <span className={styles.cardPrice}>{item.price}</span>
-              </div>
+        <div className={styles.menuLayout}>
+          <div className={styles.menuBoard}>
+            <div className={styles.boardHeader}>
+              <h3 className={styles.boardTitle}>Dnes nejoblíbenější</h3>
+              <span className={styles.boardChip}>Čerstvé</span>
             </div>
-          ))}
+            <div className={styles.rows}>
+              {menuItems.map((item) => (
+                <div key={item.title} className={styles.row}>
+                  <div className={styles.rowInfo}>
+                    <span className={styles.rowCategory}>{item.category}</span>
+                    <h3 className={styles.rowTitle}>{item.title}</h3>
+                    <p className={styles.rowDesc}>{item.desc}</p>
+                  </div>
+                  <div className={styles.rowSide}>
+                    <div className={styles.rowThumbWrap}>
+                      <img
+                        src={item.image}
+                        alt={item.alt}
+                        width={90}
+                        height={90}
+                        className={styles.rowThumb}
+                      />
+                    </div>
+                    <span className={styles.rowPrice}>{item.price}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.menuAside}>
+            <div className={styles.posterCard}>
+              <img
+                src="/images/cupcakes.jpg"
+                alt="Růžový cupcake"
+                width={320}
+                height={320}
+                className={styles.posterImg}
+              />
+              <span className={styles.posterBadge}>Vhodné jako ikona</span>
+            </div>
+            <div className={styles.noteCard}>
+              <h4 className={styles.noteTitle}>Krátká přestávka, rychlá obsluha.</h4>
+              <p className={styles.noteText}>
+                Připravujeme dopředu, abyste si svůj oblíbený kousek vzali během
+                pár vteřin.
+              </p>
+              <a href="#hours" className={styles.noteBtn}>
+                Otevírací doba
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
