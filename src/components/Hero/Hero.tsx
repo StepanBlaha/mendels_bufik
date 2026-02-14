@@ -1,6 +1,6 @@
 ﻿import styles from "./Hero.module.css";
 import { ArrowRight, Clock } from "lucide-react";
-
+import cake from "../../assets/images/cake.png"
 export default function Hero() {
   return (
     <section className={styles.hero} id="home">
@@ -37,6 +37,8 @@ export default function Hero() {
 
         <div className={styles.heroRight}>
           <div className={styles.showcase}>
+            <img src={cake} className={styles.Image} alt="" />
+            {/*
             <div className={styles.iconCard}>
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MuTXFGfkLWVdffjEePBSUAx31f49hB.png"
@@ -47,6 +49,8 @@ export default function Hero() {
               />
               <span className={styles.iconLabel}>Ikona připravená</span>
             </div>
+            */}
+            {/*
             <div className={styles.photoRow}>
               <div className={styles.miniCard}>
                 <img
@@ -67,8 +71,9 @@ export default function Hero() {
                 />
               </div>
             </div>
+             */}
           </div>
-          <div className={styles.floatingTag}>Čerstvě pečeno každý den!</div>
+          <div className={styles.floatingTag}>Čerstvě připravováno každý den!</div>
         </div>
       </div>
     </section>

@@ -57,7 +57,7 @@
 .card {
   background: white;
   border-radius: 14px;
-  overflow: hidden;
+  overflow: visible;
   text-align: left;
   padding-bottom: 1.4rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -75,7 +75,7 @@
   height: 240px;
   object-fit: cover;
   display: block;
-  border-bottom: 2.5px solid var(--ink);
+  overflow: visible;
 }
 
 .cardContent {
@@ -83,6 +83,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+  border-top: 2.5px solid var(--ink);
 }
 
 .cardName {
@@ -117,6 +121,10 @@
   .grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .cardImage {
+    height: 200px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -129,6 +137,7 @@
   }
 
   .cardImage {
-    height: 220px;
+    width: 64%;
+    margin: 0 auto;
   }
 }

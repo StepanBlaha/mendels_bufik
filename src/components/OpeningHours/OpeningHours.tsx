@@ -1,5 +1,5 @@
 ﻿import styles from "./OpeningHours.module.css";
-import { Info } from "lucide-react";
+import coffeeSign from "../../assets/images/coffee_sign.png";
 
 const timeSlots = [
   { label: "Ranní přestávka", time: "9:35 – 9:45" },
@@ -18,10 +18,7 @@ export default function OpeningHours() {
             Otevíráme okénko během školních přestávek, abyste si stihli dát
             oblíbenou svačinu bez zdržení. Rychle, čerstvě, vždy připraveno.
           </p>
-          <div className={styles.note}>
-            <Info size={15} />
-            <span>Jen školní dny (Po – Pá)</span>
-          </div>
+          <img src={coffeeSign} className={styles.leftImage} alt="coffee_sign_left" />
         </div>
 
         <div className={styles.right}>
@@ -37,6 +34,7 @@ export default function OpeningHours() {
               ))}
             </div>
           </div>
+          <img src={coffeeSign} className={styles.rightImage} alt="coffee_sign_right" />
         </div>
       </div>
     </section>

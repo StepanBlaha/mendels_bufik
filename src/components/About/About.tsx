@@ -2,25 +2,25 @@
 
 const team = [
   {
-    name: "Terka",
-    role: "Hlavní pekařka",
-    bio: "Vstává za tmy, aby byly croissanty zlatavé a cupcaky dokonale ozdobené.",
-    image: "/images/team-1.jpg",
-    alt: "Terka, hlavní pekařka",
+    name: "Kuba",
+    role: "Proteinový magnát",
+    bio: "300g proteinu na den není pro něj háček. Když se hezky usmějete, dá vám do kafe zdarma kreatin.",
+    image: "/images/team/kuba.png",
+    alt: "Kuba, proteinový magnát",
   },
   {
-    name: "Honza",
-    role: "Mistr sendvičů",
-    bio: "Chystá nejčerstvější bagety a wrapy. Pokud uvidíte úsměv za pultem, je to nejspíš on.",
-    image: "/images/team-2.jpg",
-    alt: "Honza, mistr sendvičů",
-  },
-  {
-    name: "Lucka",
+    name: "Eva",
     role: "Káva a nápoje",
     bio: "Umí perfektní latte a vždy si pamatuje, co si dáváte nejčastěji.",
-    image: "/images/team-3.jpg",
-    alt: "Lucka, baristka",
+    image: "/images/team/zena.png",
+    alt: "Eva, baristka",
+  },
+  {
+    name: "Ondra",
+    role: "Mistr sendvičů",
+    bio: "Držitel neoficiálního rekordu v nejvíce toustech snězených za 18 let. Nejlepší toustař Moravy.",
+    image: "/images/team/ondra.png",
+    alt: "Ondra, mistr sendvičů",
   },
 ];
 

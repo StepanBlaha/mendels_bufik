@@ -14,7 +14,7 @@ export default function Footer() {
                 className={styles.logoImg}
               />
               <span className={styles.logoText}>
-                Mendel&uring;v <span className={styles.logoTextAccent}>Buf&iacute;k</span>
+                Mendelův <span className={styles.logoTextAccent}>Buf&iacute;k</span>
               </span>
             </div>
             <p className={styles.brandDesc}>
@@ -25,73 +25,55 @@ export default function Footer() {
             </p>
           </div>
 
-            <div>
-              <h3 className={styles.colTitle}>Navigace</h3>
-            <ul className={styles.colLinks}>
-              <li>
-                <a href="#home" className={styles.colLink}>
-                  Dom&#367;
-                </a>
-              </li>
-              <li>
-                <a href="#menu" className={styles.colLink}>
-                  Menu
-                </a>
-              </li>
-              <li>
-                <a href="#hours" className={styles.colLink}>
-                  Otev&#237;rac&#237; doba
-                </a>
-              </li>
-              <li>
-                <a href="#gallery" className={styles.colLink}>
-                  Galerie
-                </a>
-              </li>
-            </ul>
-          </div>
+            <div className={styles.linkGroup}>
+              <div>
+                <h3 className={styles.colTitle}>Navigace</h3>
+                <ul className={styles.colLinks}>
+                  <li>
+                    <a href="#home" className={styles.colLink}>
+                      Dom&#367;
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#menu" className={styles.colLink}>
+                      Menu
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#hours" className={styles.colLink}>
+                      Otev&#237;rac&#237; doba
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-            <div>
-              <h3 className={styles.colTitle}>O n&aacute;s</h3>
-            <ul className={styles.colLinks}>
-              <li>
-                <a href="#team" className={styles.colLink}>
-                  N&aacute;&#353; t&yacute;m
-                </a>
-              </li>
-              <li>
-                <span className={styles.colLink}>
-                  Denn&#283; &#269;erstv&eacute;
-                </span>
-              </li>
-              <li>
-                <span className={styles.colLink}>
-                  D&#283;lan&eacute; s l&aacute;skou
-                </span>
-              </li>
-            </ul>
-          </div>
+              <div>
+                <h3 className={styles.colTitle}>O n&aacute;s</h3>
+                <ul className={styles.colLinks}>
+                  <li>
+                    <a href="#team" className={styles.colLink}>
+                      N&aacute;&#353; t&yacute;m
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-            <div>
-              <h3 className={styles.colTitle}>Sledujte n&aacute;s</h3>
-            <ul className={styles.colLinks}>
-              <li>
-                <a
-                  href="https://www.instagram.com/mendels.bufik/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.colLink}
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="#socials" className={styles.colLink}>
-                  Bu&#271;te v kontaktu
-                </a>
-              </li>
-            </ul>
-          </div>
+              <div>
+                <h3 className={styles.colTitle}>Sledujte n&aacute;s</h3>
+                <ul className={styles.colLinks}>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/mendels.bufik/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.colLink}
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </div>
 
           <p className={styles.bigTagline}>
