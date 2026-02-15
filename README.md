@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# Mendel's Bufik — Case Study
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, playful landing page for a school snack bar concept. This project is a **frontend case study** focused on visual personality, clear information hierarchy, and performance-friendly micro‑interactions that still feel lively on low‑end devices.
 
-Currently, two official plugins are available:
+## Case Study Notes
+- This is a design + frontend implementation study, not an official production site.
+- Content, branding, and pricing are illustrative.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- `React` + `TypeScript`
+- `Vite` for dev server and builds
+- `React Router` for routing
+- `Framer Motion` for lightweight animations
+- `Lucide React` for icons
+- `CSS Modules` for scoped styling
+- `ESLint` for code quality
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Scripts
+- `npm run dev` – start the dev server
+- `npm run build` – typecheck and build for production
+- `npm run preview` – preview the production build locally
+- `npm run lint` – run linting
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Project Structure
+- `src/pages/Home/page.tsx` – main landing page composition
+- `src/components/` – UI sections (Hero, Menu, About, OpeningHours, Footer, etc.)
+- `src/routes.tsx` – app routes
+- `src/App.tsx` – app shell
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Goals
+- Fast load and smooth UI on weaker phones
+- Minimal, intentional animations
+- Friendly, high-contrast visual language
