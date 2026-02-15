@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} reveal`}>
       <div className={styles.footerInner}>
         <div className={styles.footerPanel}>
           <div className={styles.footerGrid}>

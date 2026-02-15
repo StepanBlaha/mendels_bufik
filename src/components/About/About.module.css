@@ -76,6 +76,11 @@
   object-fit: cover;
   display: block;
   overflow: visible;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.02);
 }
 
 .cardContent {

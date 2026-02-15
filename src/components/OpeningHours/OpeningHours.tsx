@@ -9,7 +9,7 @@ const timeSlots = [
 
 export default function OpeningHours() {
   return (
-    <section className={styles.section} id="hours">
+    <section className={`${styles.section} reveal`} id="hours">
       <div className={styles.inner}>
         <div className={styles.left}>
           <span className={styles.sectionTag}>Kdy se stavit</span>

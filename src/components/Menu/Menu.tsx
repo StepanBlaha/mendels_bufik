@@ -95,7 +95,7 @@ const menuItems = [
 
 export default function MenuHighlights() {
   return (
-    <section className={styles.section} id="menu">
+    <section className={`${styles.section} reveal`} id="menu">
       <div className={styles.inner}>
         <div className={styles.header}>
           <span className={styles.sectionTag}>Menu</span>

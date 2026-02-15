@@ -77,8 +77,9 @@
   display: block;
   flex-shrink: 0;
   order: 1;
-  margin-right: -0.4rem;
+  margin-right: 0;
   align-self: center;
+  animation: floatSoft 7s ease-in-out infinite;
 }
 
 .card {
@@ -145,13 +146,25 @@
   color: var(--ink);
       white-space: nowrap;
 }
+
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .rightImage{
   display: none;
     width: clamp(240px, 32vw, 380px);
   height: auto;
   flex-shrink: 0;
   order: 1;
-  margin-right: -0.4rem;
+  margin-right: 0;
 }
 .leftImage{
   display: block;
@@ -159,7 +172,7 @@
   height: auto;
   flex-shrink: 0;
   order: 1;
-  margin-right: -0.4rem;
+  margin-right: 0;
 }
 @media (max-width: 768px) {
   .section {

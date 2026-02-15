@@ -3,7 +3,7 @@ import { ArrowRight, Clock } from "lucide-react";
 import cake from "../../assets/images/cake.png"
 export default function Hero() {
   return (
-    <section className={styles.hero} id="home">
+    <section className={`${styles.hero} reveal`} id="home">
       <div className={styles.doodleOne} aria-hidden="true" />
       <div className={styles.doodleTwo} aria-hidden="true" />
       <div className={styles.doodleThree} aria-hidden="true" />

@@ -26,7 +26,7 @@ const team = [
 
 export default function Team() {
   return (
-    <section className={styles.section} id="team">
+    <section className={`${styles.section} reveal`} id="team">
       <div className={styles.inner}>
         <div className={styles.header}>
           <span className={styles.sectionLabel}>Náš tým</span>
