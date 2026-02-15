@@ -1,10 +1,10 @@
-﻿import styles from "./OpeningHours.module.css";
+import styles from "./OpeningHours.module.css";
 import coffeeSign from "../../assets/images/coffee_sign.png";
 
 const timeSlots = [
-  { label: "Ranní přestávka", time: "9:35 – 9:45" },
-  { label: "Velká přestávka", time: "11:20 – 11:45" },
-  { label: "Odpolední přestávka", time: "12:30 – 12:50" },
+  { label: "1. přestávka", time: "9:35 – 9:45" },
+  { label: "2. přestávka", time: "11:20 – 11:45" },
+  { label: "Obědová přestávka", time: "12:30 – 12:50" },
 ];
 
 export default function OpeningHours() {
