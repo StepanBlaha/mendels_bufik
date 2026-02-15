@@ -31,6 +31,13 @@
   padding: 0.3rem 0.7rem;
   width: fit-content;
   transform: rotate(-1deg);
+  transition: transform 0.18s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sectionTag:hover {
+    transform: rotate(-2deg) translateY(-1px);
+  }
 }
 
 .title {

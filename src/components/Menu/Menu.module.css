@@ -29,6 +29,7 @@
   padding: 0.3rem 0.7rem;
   display: inline-block;
   transform: rotate(-1deg);
+  transition: transform 0.18s ease;
 }
 
 .title {
@@ -89,6 +90,7 @@
   border: 2px solid var(--ink);
   border-radius: 999px;
   padding: 0.2rem 0.65rem;
+  transition: transform 0.18s ease;
 }
 
 .rows {
@@ -128,6 +130,7 @@
   border-radius: 6px;
   padding: 0.2rem 0.5rem;
   width: fit-content;
+  transition: transform 0.18s ease;
 }
 
 .rowTitle {
@@ -179,6 +182,7 @@
   border: 2px solid var(--ink);
   padding: 0.25rem 0.55rem;
   border-radius: 6px;
+  transition: transform 0.18s ease;
 }
 
 .menuAside {
@@ -252,11 +256,35 @@
   border: 2px solid var(--ink);
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
+  transition: transform 0.18s ease;
 }
 
 .promoTagAlt {
   color: var(--ink);
   background: var(--yellow);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sectionTag:hover {
+    transform: rotate(-2deg) translateY(-1px);
+  }
+
+  .boardChip:hover {
+    transform: rotate(-2deg) translateY(-1px);
+  }
+
+  .rowCategory:hover {
+    transform: rotate(2deg) translateY(-1px);
+  }
+
+  .rowPrice:hover {
+    transform: rotate(-2deg) translateY(-1px);
+  }
+
+  .promoTag:hover,
+  .promoTagAlt:hover {
+    transform: rotate(-3deg) translateY(-1px);
+  }
 }
 
 .promoTitle {
