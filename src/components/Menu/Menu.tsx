@@ -1,4 +1,4 @@
-﻿import styles from "./Menu.module.css";
+import styles from "./Menu.module.css";
 
 const menuItems = [
   {
@@ -11,11 +11,11 @@ const menuItems = [
   },
   {
     category: "Svačina",
-    title: "Gurmánské sendviče",
+    title: "Gurmánské tousty",
     desc: "Řemeslné pečivo plněné kvalitní šunkou, sýrem a čerstvou zeleninou.",
     price: "Od 25 Kč",
     image: "/images/sandwich.png",
-    alt: "Čerstvý gurmánský sendvič",
+    alt: "Čerstvý gurmánský toust",
   },
   /*
   {
