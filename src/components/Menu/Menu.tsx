@@ -5,7 +5,7 @@ const menuItems = [
     category: "Pečivo",
     title: "Čerstvé waffle",
     desc: "Máslové, křehké waffle. Perfektní start do školního dne. S Čokoládou nebo buenem",
-    price: "Od 35 Kč",
+    price: "Od 20 Kč",
     image: "/images/waffle.png",
     alt: "Waffle",
   },
