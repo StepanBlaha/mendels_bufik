@@ -12,7 +12,7 @@ const team = [
     name: "Eva",
     role: "Káva a nápoje",
     bio: "Umí perfektní latte a vždy si pamatuje, co si dáváte nejčastěji.",
-    image: "/images/team/zena.png",
+    image: "/images/team/eva.png",
     alt: "Eva, baristka",
   },
   {

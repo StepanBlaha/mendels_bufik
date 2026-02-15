@@ -1,0 +1,20 @@
+{
+  "name": "Mendel\u016fv Buf\u00edk",
+  "short_name": "Buf\u00edk",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff1f6",
+  "theme_color": "#E6477B",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
