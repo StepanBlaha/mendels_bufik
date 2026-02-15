@@ -1,21 +1,21 @@
-﻿import styles from "./Menu.module.css";
+import styles from "./Menu.module.css";
 
 const menuItems = [
   {
     category: "Pečivo",
     title: "Čerstvé waffle",
     desc: "Máslové, křehké waffle. Perfektní start do školního dne. S Čokoládou nebo buenem",
-    price: "Od 35 Kč",
+    price: "Od 20 Kč",
     image: "/images/waffle.png",
     alt: "Waffle",
   },
   {
     category: "Svačina",
-    title: "Gurmánské sendviče",
+    title: "Gurmánské tousty",
     desc: "Řemeslné pečivo plněné kvalitní šunkou, sýrem a čerstvou zeleninou.",
     price: "Od 25 Kč",
     image: "/images/sandwich.png",
-    alt: "Čerstvý gurmánský sendvič",
+    alt: "Čerstvý gurmánský toust",
   },
   /*
   {
